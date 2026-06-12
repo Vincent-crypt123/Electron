@@ -69,9 +69,8 @@ jobs:
         run: ./gradlew assembleInternalDebug -Pforce-default-variant -Pddg.di=${{ matrix.di }}
 
       - name: Obtain debug apk
-        if: always()
-        run: cp "$(find . -regex '.*outputs/apk/.*internal-debug.apk')" pr-ddg-debug-${{ matrix.di }}.apk
-
+              if: always()
+      run: cp $(find . -name "*.apk" | head -n 1) pr-ddg-debug-${{ matrix.di }}.apk
       - name: Upload debug apk
         if: always()
         uses: actions/upload-artifact@v4
