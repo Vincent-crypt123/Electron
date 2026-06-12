@@ -18,7 +18,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="appName" translatable="false">Electron</string>
     <string name="appDescription" translatable="false">DuckDuckGo</string>
-    <string name="duckDuckGoLogoDescription">DuckDuckGo logo</string>
+    <string name="Electron">DuckDuckGo logo</string>
     <string name="duckDuckGoProtectionPrivacyPeaceTagLine">Protection. Privacy. Peace of Mind.</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
